@@ -32,9 +32,9 @@ test: pa05
 		./pa05 inputs/testinput3 id3 first3 last3
 
 memory:
-		valgrind ./pa05 inputs/testinput1 id1 first1 last1
-		valgrind ./pa05 inputs/testinput2 id2 first2 last2
-		valgrind ./pa05 inputs/testinput3 id3 first3 last3
+		valgrind --leak-check=full -v ./pa05 inputs/testinput1 id1 first1 last1
+		valgrind --leak-check=full -v ./pa05 inputs/testinput2 id2 first2 last2
+		valgrind --leak-check=full -v ./pa05 inputs/testinput3 id3 first3 last3
 compare:
 		diff ./expected/id1 id1 -s
 		diff ./expected/first1 first1 -s
