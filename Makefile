@@ -18,7 +18,7 @@
 CFLAGS = -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror
 COVFLAGS = -fprofile-arcs -ftest-coverage
 GCC = gcc $(CFLAGS) $(COVFLAGS)
-out1 = idl first1 last1
+out1 = id1 first1 last1
 OBJ = student.o pa05.o
 
 all: pa05
