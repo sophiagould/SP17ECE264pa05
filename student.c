@@ -111,7 +111,6 @@ bool StudentWrite(char * filename, Student * stu, int numelem)
   // do not use fclose since fopen already fails
   for(int i = 0; i < numelem; i++){
   	if(fprintf(file, "%d %s %s\n", stu[i].ID, (stu[i]).firstname, (stu[i]).lastname) < 1){
-		fclose(file);
 		return false;
 	}
   }
