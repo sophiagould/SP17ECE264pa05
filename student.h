@@ -11,12 +11,9 @@
 //  char- lastname[NAME_LENGTH]
 typedef struct
 {
-
-
-
-
-
-
+	int ID;
+	char firstname[NAME_LENGTH];
+	char lastname[NAME_LENGTH];
 } Student;
 
 // functions to be implemented
